@@ -31,7 +31,7 @@ class App extends Component {
         <Route exact path="/projects/:projectId" component={Projects}/>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
-        <Route path="/:id" render = {()=> (<p> This page is currently under construction. Remember, be safe and wear a face mask. <span role='img' aria-label='face mask emoji'>😷</span></p>)}/>
+        <Route path="/:id" render = {()=> (<a href="https://github.com/iharris06">iharris06 on Github</a>)}/>
       </div>
     );
   }

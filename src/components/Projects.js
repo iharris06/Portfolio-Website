@@ -4,9 +4,10 @@ import { Container } from 'react-bootstrap';
 
 class Projects extends Component {
     constructor(props){
+        super(props)
 
-        this.state={
-            projectList:[{'name':'ian', 'id':'2'},{'name':'michelle', 'id':'1'}],
+        this.state = {
+            projectList:[{'name':'test1', 'id':'2'}, {'name':'test2', 'id':'1'}, {'name':'test3', 'id':'3'} ],
             message: null
         }
     }
@@ -16,13 +17,13 @@ class Projects extends Component {
     }
 
 getGithubRepos(){
-    let newData = fetch("https://api.github.com/users/iharris06/repos")
-  .then(response => response.json())
-  .then(data => this.setState({
-      projectList:data,
-      message: 'success'
-    }))
-  .catch(err =>{this.setState({message:err})});
+    fetch("https://api.github.com/users/iharris06/repos")
+        .then(response => response.json())
+        .then(data => this.setState({
+            projectList:data,
+            message: 'success'
+        }))
+        .catch(err =>{this.setState({message:err})});
 }
 
 
@@ -40,6 +41,7 @@ getGithubRepos(){
                                         description={project.description}
                                         url={project.html_url}
                                         key={project.id}
+                                        lang={project.language}
                                     />
                                 )
                             })
