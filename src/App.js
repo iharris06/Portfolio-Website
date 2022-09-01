@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import { SocialIcon } from 'react-social-icons'
 
 
 class App extends Component {
@@ -17,16 +18,18 @@ class App extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div className="navbar-nav">
+              <div className=" col align-self-center navbar-nav">
                   <Link className="nav-item nav-link link-text-dark" to="/">Home</Link>
                   <Link className="nav-item nav-link link-text-dark" to="/projects">Projects</Link>
                   <Link className="nav-item nav-link link-text-dark" to="/about">About</Link>
                   <Link className="nav-item nav-link link-text-dark" to="/contact">Contact</Link>
               </div>
-              <div>
-                <SocialIcon className="social" bgColor="white" url="https://www.youtube.com/user/MichelleKMoyer"/>
-                <SocialIcon className="social" bgColor="white" url="https://instagram.com/michellemoyermusic?utm_medium=copy_link"/>
+              
+              <div class="col align-self-center">
+                <SocialIcon className="social" bgColor="white" url="https://github.com/iharris06"/>
+                <SocialIcon className="social" bgColor="white" url="https://www.linkedin.com/in/ianharris-dev"/>
               </div>
+              
             </div>
         </nav>
         
