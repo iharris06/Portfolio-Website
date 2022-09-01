@@ -8,12 +8,12 @@
 
 .Color{
   color:black;
+  height: 100vh;
 }
 
 div.banner{
   position: relative;
   text-align: center;
-  color: white;
 }
 
 img.banner {
@@ -26,7 +26,6 @@ img.resume-doc{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 50rem;
     text-align: center;
-    margin: 15px;
 }
 
 .home-text{

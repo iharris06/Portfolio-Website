@@ -29,11 +29,11 @@ getGithubRepos(){
 
     render(){
         return(
-            <Container>
+            <Container class="container-fluid">
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col">
                         <h1>Projects</h1>
-                        <div className="row">
+                        <div className="row justify-content-center">
                             {this.state.projectList.map(project => {
                                 return (
                                     <ProjectTile 
