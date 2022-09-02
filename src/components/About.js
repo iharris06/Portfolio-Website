@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 class About extends Component {
 render(){
     return(
-        <Container class="container-fluid page">
+        <Container class="container-fluid">
             <div class="row">
                 <div class="col">
                     <h2 className='light-text'>About</h2>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import banner from '../images/computer-dark.jpg';
 import {Link} from 'react-router-dom';
+import { Spinner } from 'react-bootstrap';
 
 class Home extends Component {
 render(){
@@ -16,6 +17,7 @@ render(){
             <div className='row'>
                 <img src={banner} className="banner" alt="computer" />
             </div>
+            <Spinner></Spinner>
         </div>
         
     )

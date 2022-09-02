@@ -5,13 +5,14 @@ import Projects from './components/Projects';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import { SocialIcon } from 'react-social-icons'
+import Spinner from './components/LoadingSpinner';
+import { SocialIcon } from 'react-social-icons';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App Color">
+      <div className="App container-fluid Color page">
         <nav className="navbar navbar-expand-lg navbar-dark" expand="md">
             <Link to="/" className="navbar-brand brand-title" style={{ textDecoration: 'none', color:"white" }}>Ian Harris</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +39,7 @@ class App extends Component {
         <Route exact path="/projects/:projectId" component={Projects}/>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
-        <Route path="/:id" render = {()=> (<a className="link-text-dark footer" href="https://github.com/iharris06">iharris06 on Github</a>)}/>
+        <Route path="/spinner" component={Spinner}/>
       </div>
     );
   }

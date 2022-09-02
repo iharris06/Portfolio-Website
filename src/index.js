@@ -7,9 +7,11 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>,
+    <body>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </body>,
     document.getElementById('root')
  );
 
