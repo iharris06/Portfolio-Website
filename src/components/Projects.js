@@ -17,7 +17,6 @@ class Projects extends Component {
     componentDidMount(){
         this.setState({loading: true});
         this.getGithubRepos();
-        this.setState({loading: false});
     }
 
 getGithubRepos(){
