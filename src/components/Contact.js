@@ -5,12 +5,12 @@ import * as Constants from  '../../src/constants';
 class Contact extends Component {
 render(){
     return(
-        <div>
-        <h2>Contact Ian!</h2>
-        <p>
-            {Constants.EMAIL_FORM_MESSAGE}
-        </p>
-        <EmailForm />
+        <div className='page light-text'>
+            <h2>Contact Ian!</h2>
+            <p>
+                {Constants.EMAIL_FORM_MESSAGE}
+            </p>
+            <EmailForm />
         </div>
         /* TODO
             Have contact form:

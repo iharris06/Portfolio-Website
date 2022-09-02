@@ -11,7 +11,7 @@ import { SocialIcon } from 'react-social-icons'
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App Color">
         <nav className="navbar navbar-expand-lg navbar-dark" expand="md">
             <Link to="/" className="navbar-brand brand-title" style={{ textDecoration: 'none', color:"white" }}>Ian Harris</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@ class App extends Component {
                   <Link className="nav-item nav-link link-text-dark" to="/contact">Contact</Link>
               </div>
               
-              <div class="col align-self-center">
+              <div className="col align-self-center">
                 <SocialIcon className="social" bgColor="white" url="https://github.com/iharris06"/>
                 <SocialIcon className="social" bgColor="white" url="https://www.linkedin.com/in/ianharris-dev"/>
               </div>
@@ -38,7 +38,7 @@ class App extends Component {
         <Route exact path="/projects/:projectId" component={Projects}/>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
-        <Route path="/:id" render = {()=> (<a href="https://github.com/iharris06">iharris06 on Github</a>)}/>
+        <Route path="/:id" render = {()=> (<a className="link-text-dark footer" href="https://github.com/iharris06">iharris06 on Github</a>)}/>
       </div>
     );
   }

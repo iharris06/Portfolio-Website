@@ -22,6 +22,17 @@ class EmailForm extends Component {
         this.verifyRecaptcha = this.verifyRecaptcha.bind(this);
     }
 
+    clearForm(event){
+        this.setState({
+            email:'',
+            emailMessage:'',
+            recaptchaReady: false,
+            formReady: false,
+            error: false,
+            message: null
+        })
+    }
+
     handleEmailChange(event){
         this.setState({email: event.target.value})
     }
@@ -34,16 +45,8 @@ class EmailForm extends Component {
         this.setState({message: event.target.value})
     }
 
-    handleSubmit(event){
-        event.preventDefault();
-
-    //    if( this.Recaptcha.execute()){
-            alert('Email submitted successfully from ' + this.state.email);    
-        // } else{
-            // alert('Please verify that you are a human.');
-        // }
-
-        
+    handleSubmit(event){ 
+        this.clearForm(event)
     }
 
     recaptchaLoaded(){

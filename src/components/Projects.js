@@ -29,10 +29,10 @@ getGithubRepos(){
 
     render(){
         return(
-            <Container class="container-fluid">
+            <Container className='page'>
                 <div className="row">
                     <div className="col">
-                        <h1>Projects</h1>
+                        <h1 className='light-text'>Projects</h1>
                         <div className="row justify-content-center">
                             {this.state.projectList.map(project => {
                                 return (
