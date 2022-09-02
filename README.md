@@ -1,9 +1,13 @@
 ## Portfolio Website
+## Description
+This website uses a responsive design and shows some basic information about the author in addition to displaying their public github projects. 
 ### Pages
 * Projects
     * This loads projects from my github.
 * About
+    * Shares my resume.
 * Contact
+    * A contact form to send emails to me.
 
 ## Available Scripts
 
